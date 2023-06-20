@@ -12,6 +12,7 @@ function actionByKey(key) {
 		Digit3: 'glass',
 		Digit4: 'wood',
 		Digit5: 'log',
+		Shift: 'shiftPressed',
 	}
 	return keyActionMap[key]
 }
@@ -28,6 +29,7 @@ export const useKeyboard = () => {
 		glass: false,
 		wood: false,
 		log: false,
+		shiftPressed: false,
 	})
 
 	const handleKeyDown = useCallback((e) => {
